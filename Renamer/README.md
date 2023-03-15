@@ -1,0 +1,1 @@
+Create python script that works off of double click and renames all files in current directory according to some GUI input given.
