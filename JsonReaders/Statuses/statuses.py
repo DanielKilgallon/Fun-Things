@@ -339,15 +339,17 @@ nouns = [
     "IP address"
 ]
 
-constructive=True
-random.seed()
-output = ""
+def getStatus(positive):
+    random.seed()
+    output = ""
 
-if constructive:
-    output += random.choice(constructiveVerbs)
-else:
-    output += random.choice(destructiveVerbs)
-output += "ing "
-output += random.choice(nouns)
-output += "..."
-print(output)
+    if positive:
+        output += random.choice(constructiveVerbs)
+    else:
+        output += random.choice(destructiveVerbs)
+    output += "ing "
+    output += random.choice(nouns)
+    output += "..."
+    print(output)
+
+getStatus(positive=True)
